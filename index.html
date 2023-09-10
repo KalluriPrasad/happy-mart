@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <title>Happy Mart</title>
+  </head>
+  <body>
+    <header class="mt-3">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-md-4">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Search"
+              class="form-control border"
+            />
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-dark">
+            loding.. <span class="spinner-border spinner-border-sm"></span>
+          </button>
+          <button
+            class="btn btn-primary bg-gradient"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            Login
+          </button>
+          <div class="modal" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h1>Login</h1>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <label for="" class="form-label"> User Id </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="User Id"
+                    />
+                    <label for="" class="form-label"> Password </label>
+                    <input
+                      type="passowrd"
+                      placeholder="Password"
+                      class="form-control"
+                    />
+                  </form>
+                </div>
+
+                <div class="modal-footer">
+                  <button class="btn btn-success" data-bs-dismiss="modal">
+                    Exit
+                  </button>
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-success bg-gradient"
+            data-bs-toggle="modal"
+            data-bs-target="#modal1"
+          >
+            Register
+          </button>
+          <div class="modal" id="modal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h1>Login</h1>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="was-validated">
+                    <label for="" class="form-label"> First Name </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                      required
+                    />
+                    <label for="" class="form-label"> Last Name </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name "
+                      required
+                    />
+                    <label for="" class="form-label"> E-Mail </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                    <label for="" class="form-label"> Password </label>
+                    <input
+                      type="passowrd"
+                      placeholder="Password"
+                      class="form-control"
+                      required
+                    />
+                  </form>
+                  <div class="container">
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <label for="" class="form-label fw-bold">Male</label>
+                        <input
+                          type="radio"
+                          name="male"
+                          id="male"
+                          value="radio"
+                          class="form-check-input"
+                        />
+                        <label for="" class="form-label fw-bold">Female</label>
+                        <input
+                          type="radio"
+                          name="male"
+                          id="male"
+                          value="radio"
+                          class="form-check-input"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label for="" class="form-label fw-bold">DOB</label>
+                        <input type="date" name="" id="" value="date" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button class="btn btn-success" data-bs-dismiss="modal">
+                    Exit
+                  </button>
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-primary mt-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="/logo.png" alt="" width="120px" />
+        </a>
+        <!-- <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#1"
+        ></button>
+
+        <span class="navbar-toggler-icon"></span> -->
+      </div>
+      <div class="collapse navbar-collapse" id="1">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link text-white"> Deal Toady </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-white"> Speacial Prices</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"> Fresh </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"> Shop </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <button
+        class="btn btn-success mt-3 ms-2"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#off"
+      >
+        Menu
+      </button>
+    </div>
+    <div class="row mt-3">
+      <!-- <div class="col-md-2"></div> -->
+      <div class="col-md">
+        <img
+          src="/images/silder.jpg"
+          alt=""
+          class="mx-auto d-block rounded-9"
+          height="450px"
+          width="98%px"
+        />
+      </div>
+    </div>
+    <div class="containes">
+      <div class="offcanvas offcanvas-start" id="off">
+        <h2 class="m-5">MENU</h2>
+        <div class="row">
+          <div class="col-md-2">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item m-2">
+                <a href="#" class="nav-link fw-bold">
+                  Home <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item m-2">
+                <a href="#" class="nav-link fw-bold">
+                  Shoping <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item m-2">
+                <a href="#" class="nav-link fw-bold">
+                  About <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item m-2">
+                <a href="#" class="nav-link fw-bold">
+                  Cotanct Us <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <h5 class="display-8 fw-bold">Deal Today</h5>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/1.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-title fw-bold text-center">
+                Sansui 127 cm (50 inch)
+                <span class="badge bg-success rounded-pill">95% Discount</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/2.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-titl fw-bold text-center">
+                Realme TechLife 7 kg 5
+                <span class="badge bg-success rounded-pill">95% Discount</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/3.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-title fw-bold text-center">
+                Whirlpool Convertible
+                <span class="badge bg-success rounded-pill">95% Discount</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/4.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-title fw-bold text-center">
+                SAMSUNG 183 L Direct
+                <span class="badge bg-success rounded-pill">95% Discount</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/5.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-title">
+                <h6 class="fw-bold fs-6 text-center">
+                  Livpure Elega - 60
+                  <span class="badge bg-success rounded-pill"
+                    >95% Discount</span
+                  >
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="/images/deal today/6.jpg"
+                class="mx-auto d-block"
+                alt=""
+                width="150px"
+              />
+              <div class="card-title fw-bold text-center">
+                Pigeon 25-Litre
+                <span class="badge bg-success rounded-pill">95% Discount</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h4 class="fw-bold">Best of Electronics</h4>
+      <div class="row mt-4">
+        <div class="col-md-2">
+          <div class="card">
+            <img src="/images/best of ele/printer.jpg" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Hp LaserJet</h4>
+              <p class="card-text text-start">
+                HP LaserJet M1005 MFP Multi-function Monochrome Laser Printer
+                (White, Black, Toner Cartridge)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img src="/images/best of ele/camer.jpg" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Canon EOS M50</h4>
+              <p class="card-text text-start">
+                Canon EOS M50 Mark II Mirrorless Camera EF-M15-45mm is STM Lens
+                (Black)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="/images/best of ele/Power Bank.jpg"
+              alt=""
+              width="165px"
+              height="150px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Power Bank</h4>
+              <p class="card-text text-start">
+                Callmate 20000 mAh Power Bank (15 W, Fast Charging) (Black,
+                Lithium Polymer)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="/images/best of ele/Hair Trimmer.jpg"
+              alt=""
+              width="170px"
+              height="150px"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Hair Trimmer</h4>
+              <p class="card-text text-start">
+                VGR V-055 Professional Hair Trimmer Trimmer 120 min Runtime 4
+                Length Settings (Black, Green)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img src="/images/best of ele/PLAY 2022 PP9 Full HD.jpg" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title">PLAY 2022 PP9 Full HD</h4>
+              <p class="card-text text-start">
+                PLAY 2022 PP9 Full HD 1080p Projector for Home Office Classroom
+                1080P 300 inch Screen (4000 lm / Remote Controller) Portable
+                Projector (Black/Silver)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img src="/images/best of ele/Egate O9 Pro ZEN.jpg" alt="" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Egate O9 Pro "ZEN"</h4>
+              <p class="card-text text-start">
+                Egate O9 Pro "ZEN" Automatic Dual OS - Android + FTS (Ceritied
+                Apps), Fully Automatic (9600 lm) Projector (Black)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas"></div>
+
+    <!-- script -->
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
